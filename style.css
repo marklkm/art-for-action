@@ -363,3 +363,63 @@ h6 {
     transition: box-shadow .3s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: box-shadow .3s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-box-shadow .3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+
+/* Media queries */
+/* Media query for small devices such as mobile phones */
+@media (max-width: 767px) {
+  /* Reduce heading sizes on mobile */
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+
+  /* Adjust navbar layout for smaller screens */
+  .navbar-brand img {
+    width: 100px; /* Adjust logo size for mobile */
+    height: auto;
+  }
+
+  /* Reduce padding and margins for containers */
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust layout for images and text columns */
+  .col-md-6 {
+    flex: 100%; /* Full width for each column on mobile */
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust padding and font size in modals and buttons */
+  .modal-content {
+    padding: 1rem;
+  }
+  button,
+  .btn {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+  }
+
+  /* Responsive adjustments for footer elements */
+  footer .col-lg-2,
+  footer .col-lg-5,
+  footer .col-lg-3 {
+    flex: 100%; /* Stack footer columns on mobile */
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
