@@ -26,12 +26,12 @@ html, body {
 .line {
   width: 100%;
   height: 1px;
-  border-bottom: 10px solid #b870ff;
+  border-bottom: 10px solid #6B00D6;
   margin: 40px 0;
 }
 
 .purpletext {
-  color: #b870ff;
+  color: 6B00D6;
   display: inline;
   margin-top: 20px;
   font-size: 3em;
@@ -64,7 +64,7 @@ a {
 
 /* custom drop cap for The Sensory Trail heading */
 .custom-bg {
-  background-color: #b870ff;; /* Custom color */
+  background-color: #6B00D6;; /* Custom color */
   font-size: 2em;
 }
 
@@ -108,15 +108,15 @@ a {
 
 .navbar-toggler {
   filter: invert(100%);
-  background-color: #b870ff;
+  background-color: #B5C355;
 }
 
 .navbar-toggler-icon {
   background-image: none;
-  color: #b870ff; /* Fallback for older browsers */
+  color: #B5C355; /* Fallback for older browsers */
 
   /* Adding a solid color instead of the default icon */
-  border: 2px solid #b870ff;
+  border: 2px solid #76842E;
   border-radius: 4px;
   width: 24px;
   height: 24px;
@@ -126,7 +126,7 @@ a {
 .navbar-toggler-icon::before {
 
   font-size: 20px;
-  color: #b870ff; /* Icon color */
+  color: #B5C355; /* Icon color */
 }
 
 .navbar,
@@ -162,7 +162,7 @@ li,
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
 
-  color: #b870ff !important;
+  color: #B5C355 !important;
   outline: none; /* Remove default browser outline */
 }
 
@@ -300,7 +300,7 @@ h6 {
     padding: 10px;
     border: none;
     border-radius: 0%;
-    background-color: #b870ff;
+    background-color: #6B00D6;
     color: white;
     cursor: pointer;
     z-index: 1000; /* Keeps the button on top */
