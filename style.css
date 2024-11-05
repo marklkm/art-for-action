@@ -22,6 +22,12 @@ html, body {
   font-size: initial;
 }
 
+.custom-artist-button {
+  background-color: #6B00D6 !important;
+  color: #ffffff !important;
+}
+
+
 
 .line {
   width: 100%;
@@ -31,10 +37,16 @@ html, body {
 }
 
 .purpletext {
-  color: 6B00D6;
+  color: #6B00D6;
   display: inline;
   margin-top: 20px;
-  font-size: 3em;
+  font-size: 2.5em;
+}
+
+.whitetext {
+  color: #ffffff;
+  margin-top: 10px;
+  font-size: 2.5em;
 }
 
 /* Body Content Container */
