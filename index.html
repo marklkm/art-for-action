@@ -189,12 +189,66 @@
             </div>
           </div>
         </section>
+        <section class="container my-5" aria-labelledby="accessibilityTitle">
+          <div class="card bg-light shadow-sm">
+            <div class="card-header" id="accessibilityTitle" role="heading">
+              <h2 class="purpletext">Universal Accessibility & Inclusion</h2>
+            </div>
+            <div class="card-body">
+              <pre><code class="language-javascript">
+                      // Initialize Accessibility & Inclusion Project
+                      const project = {
+                          name: "Universal Accessibility & Inclusion",
+                          description: "A commitment to building spaces and experiences that empower everyone, regardless of ability.",
+                          corePrinciples: {
+                              accessibility: true,
+                              inclusivity: true,
+                              empathy: true,
+                              diversity: true,
+                          },
+                          objectives: [
+                              "Eliminate barriers to access",
+                              "Encourage inclusive design practices",
+                              "Promote equitable participation for all",
+                              "Celebrate diverse perspectives and talents",
+                          ],
+                          resources: {
+                              assistiveTechnologies: ["screenReaders", "voiceRecognition", "captioning"],
+                              inclusiveDesignGuidelines: ["WCAG", "UDL", "ARIA"],
+                              supportNetwork: ["advocacyGroups", "specializedTherapists", "communityVolunteers"],
+                          },
+                          actions: {
+                              assessNeeds: function(user) {
+                                  return user.requirements ? "Customized solutions deployed" : "Standard options provided";
+                              },
+                              provideSupport: function(resource) {
+                                  return `Offering ${resource} to ensure equal opportunity for every participant.`;
+                              },
+                              gatherFeedback: function() {
+                                  console.log("Feedback is vital to continuous improvement.");
+                                  return "Adapting project scope based on user input.";
+                              }
+                          }
+                      };
+  
+                      // Execute Inclusion & Accessibility Plan
+                      project.actions.assessNeeds({ requirements: true });
+                      project.actions.provideSupport("screenReaders");
+                      project.actions.gatherFeedback();
+  
+                      // Result: A more inclusive, accessible, and compassionate world.
+                      // Coding disAbility
+                      // By Mark Likeman
+                  </code></pre>
+            </div>
+          </div>
+        </section>
       </div>
       <div class="line"></div>
       <div class="container my-5">
         <div class="row">
           <div class="col-12 text-center mb-4">
-            <h3 class="purpletext">Gallery Showcase</h3>
+            <h3 class="purpletext">Art for Action Showcase</h3>
             <p class="lead">Explore a selection of artworks</p>
           </div>
         </div>
@@ -1145,5 +1199,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
   </body>
 </html>
