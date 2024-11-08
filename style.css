@@ -442,7 +442,7 @@ h6 {
 }
 
 
-/* High Contrast Button */
+/* High Contrast Button and Dyslexic Font Button */
 .high-contrast {
   background-color: #000 !important;
   color: #fff !important;
@@ -471,4 +471,14 @@ h6 {
   background-color: #fff !important;
   color: #000 !important;
   border-color: #fff !important;
+}
+
+/* Dyslexic Font Style */
+.dyslexic-font {
+    font-family: 'OpenDyslexic', Arial, sans-serif !important;
+}
+
+.btn-active {
+  background-color: #007bff !important;
+  color: #fff !important;
 }

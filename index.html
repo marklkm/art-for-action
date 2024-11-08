@@ -29,6 +29,12 @@
       content="Art for Action is an inclusive art exhibition aimed at empowering disabled students to express their perspectives and creativity through art. Held from 3-6 December 2024, at Mheitheal - Printing House Square. Join us in building an inclusive future where art serves as a bridge for advocacy, and change."
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- OpenDyslexic Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/open-dyslexic@0.0.4/open-dyslexic.min.css"
+    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -116,14 +122,25 @@
 
     <main id="maincontent" tabindex="0" class="container" role="main">
       <div class="container mt-5 mb-4" role="banner">
-        <!-- Contrast Toggle Button -->
-        <div class="text-start text-md-center mb-3 mt-3">
+        <div class="text-start text-lg-center mb-3">
+          <!-- Contrast Toggle Button -->
           <button
             id="contrast-toggle"
-            class="btn btn-secondary"
+            class="btn btn-secondary mt-2 mb-2"
             aria-pressed="false"
           >
-            Toggle High Contrast
+            <i class="bi bi-eye"></i>
+            <span id="contrast-label">High Contrast</span>
+          </button>
+
+          <!-- Font Toggle Button -->
+          <button
+            id="font-toggle"
+            class="btn btn-secondary mt-2 mb-2"
+            aria-pressed="false"
+          >
+            <i class="bi bi-fonts"></i>
+            <span id="font-label">Enable Dyslexic-Friendly Font</span>
           </button>
         </div>
 
@@ -408,544 +425,534 @@
                       website.
                     </p>
                   </div>-->
-                </div>
-              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header text-dark">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseThree"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseThree"
-            >
-              Sensory Information
-            </button>
-          </h3>
-          <div
-            id="panelsStayOpen-collapseThree"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              <p>
-                <strong>Sensory Information:</strong> The
-                <a
-                  href="https://www.tcd.ie/disability/"
-                  target="_blank"
-                  rel="nonopener"
-                  >Trinity disAbility Service</a
-                >
-                (opens in a new tab) and TCD Sense developed the
-                <a
-                  href="https://tcdsensemap.ie/"
-                  target="_blank"
-                  rel="nonopener"
-                  >TCD Sense Map</a
-                >
-                (opens in a new tab). The map is a core element of a major
-                initiative by the disAbility Service (DS),
-                <a
-                  href="https://www.tcd.ie/disability/services/tcdsense.php"
-                  target="_blank"
-                  rel="nonopener"
-                  >TCD Sense - The Trinity Sensory Processing Project</a
-                >
-                (opens in a new tab), to make Trinity more inclusive by
-                developing “different sensory environments, supports and
-                resources to meet the needs of all students and staff within
-                Trinity”. It is an interactive and empowering tool providing
-                information about the sensory environments of different areas of
-                the college campus, as well as tips on physical access,
-                availability of power points, seating, and more.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header text-dark">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseFour"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseFour"
-            >
-              Charging Points
-            </button>
-          </h3>
-          <div
-            id="panelsStayOpen-collapseFour"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              <p>Add information.</p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header text-dark">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseFive"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseFive"
-            >
-              Accessibility
-            </button>
-          </h3>
-          <div
-            id="panelsStayOpen-collapseFive"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              <p>
-                The Trinity disAbility Hub in Printing House Square invites Deaf
-                and disabled students, staff, and visitors to an inclusive,
-                accessible and welcoming environment. For more information about
-                accessibility in An Mheitheal, you can check out the
-                <a
-                  href="https://tcdsensemap.ie/space/printing-house-square-an-mheitheal"
-                  target="_blank"
-                  rel="nonopener"
-                  >TCD Sense Map - An Mheitheal Space</a
-                >
-                (opens in a new tab).
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header text-dark">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseSeven"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseSeven"
-            >
-              Contact Info.
-            </button>
-          </h3>
-          <div
-            id="panelsStayOpen-collapseSeven"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              <div class="container mt-3 mb-3">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <a
-                      href="https://twitter.com/TCDAbility"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Follow disAbility Service on X"
-                      class="d-inline-flex align-items-center"
-                      >@TCDAbility</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <span class="flex-grow-1">Phone:</span>
-                    <a href="tel:+353%201%20896%203111" class="stretched-link"
-                      >+353 1 896 3111</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a
-                      href="mailto:askdstcd.ie"
-                      class="d-flex align-items-center"
-                      aria-label="Send email to askds@tcd.ie"
-                      >askds@tcd.ie</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="line"></div>
-        <section id="background" class="mt-4" aria-labelledby="background">
-          <h1 class="purpletext">Background</h1>
-          <p>
-            <span class="fs-1 fw-bold">2024</span> This year is the fourth year
-            of Trinity's Disability Art Exhibition, entitled
-            <strong>"Art for Action: Building an Inclusive Future!"</strong>.
-            The Trinity Provost & President Dr Linda Doyle will officially open
-            the Art for Action: Building an Inclusive Future! Exhibition, on
-            Monday 2nd December at 5:30PM, in An Meitheal, Trinity disAbility
-            Hub, Printing House Square. This year's exhibition is a
-            collaboration between the Trinity Ability co_op, and the Trinity
-            College Dublin Student's Union (TCDSU). A huge thank you to the
-            Trinity disAbility Service, and Declan Treanor - disAbility Service
-            Director, for their help and support with the exhibition. Our
-            sincerest thanks to all the artists who submitted their
-            extraordinary work!
-          </p>
-
-          <p>
-            <span class="fs-1 fw-bold">2023</span> The exhibition was entitled
-            <a
-              href="https://marklkm.github.io/BeyondBoundaries/"
-              target="_blank"
-              rel="nonopener"
-              >"Beyond Boundaries: Art Unleashed"</a
-            >
-            (Opens in a new window) and took place in An Mheitheal, Printing
-            House Square.
-          </p>
-          <p>
-            <span class="fs-1 fw-bold">2022</span> The exhibition took place in
-            An Mheitheal, Printing House Square with the theme
-
-            <a
-              href="https://marklkm.github.io/unique-exhibition/"
-              target="_blank"
-              rel="nonopener"
-              >“UNIQUE: A Disabled Perspective” </a
-            >(Opens in a new window).
-          </p>
-          <p>
-            <span class="fs-1 fw-bold">2021</span> The exhibition took place in
-            the Hamilton Zóin Mac Leinn with the theme
-
-            <a
-              href="https://www.youtube.com/watch?v=XFVd9k5CzK4&ab_channel=TrinityAbilityco_op"
-              target="_blank"
-              rel="nonopener"
-              >“Defining Disability”</a
-            >
-            (Opens in a new window).
-          </p>
-
-          <p>
-            <a
-              href="art-for-action-transcript.pdf"
-              class="btn btn-success mt-3 mb-3"
-              style="color: #ffffff; background-color: #12633d"
-              download="art-for-action-transcript.pdf"
-              aria-label="Download the full art work transcript as an accessible PDF document. A PDF reader is required. Alternatively, view the HTML version of the transcript."
-              >Download Art Work Transcript (PDF, 1MB) - A PDF reader is
-              required</a
-            ><br />
-            <a
-              href="transcript.html"
-              class="btn btn-secondary mt-3 mb-3"
-              aria-label="View the HTML version of the Art Work for full accessibility"
-              >View Art Work Transcript in HTML</a
-            >
-          </p>
-
-          <div class="line"></div>
-          <div class="container mt-5 mb-5">
-            <div class="row justify-content-center text-center">
-              <h2 class="w-100 mb-4 purpletext">Art Event Categories</h2>
-              <div class="col-6 col-md-2 d-flex justify-content-center">
-                <div class="icon-container position-relative">
-                  <img
-                    src="images/art_icon.jpeg"
-                    alt="Art icon"
-                    class="img-fluid"
-                  />
-                  <div
-                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                    tabindex="0"
-                    aria-label="More about Spring"
-                  >
-                    <strong>Art</strong>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-2 d-flex justify-content-center">
-                <div class="icon-container position-relative">
-                  <img
-                    src="images/poetry_icon.png"
-                    alt="Poetry icon"
-                    class="img-fluid"
-                  />
-                  <div
-                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                    tabindex="0"
-                    aria-label="More about Art"
-                  >
-                    <strong>Poetry</strong>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-2 d-flex justify-content-center">
-                <div class="icon-container position-relative">
-                  <img
-                    src="images/sculpture_icon.png"
-                    alt="Sculpture icon"
-                    class="img-fluid"
-                  />
-                  <div
-                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                    tabindex="0"
-                    aria-label="More about Poetry"
-                  >
-                    <strong>Sculpture</strong>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-2 d-flex justify-content-center">
-                <div class="icon-container position-relative">
-                  <img
-                    src="images/film_icon.png"
-                    alt="Film Reel icon"
-                    class="img-fluid"
-                  />
-                  <div
-                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                    tabindex="0"
-                    aria-label="More about Sculpture"
-                  >
-                    <strong>Mixed Media</strong>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-2 d-flex justify-content-center">
-                <div class="icon-container position-relative">
-                  <img
-                    src="images/fashion_icon.png"
-                    alt="Shop icon"
-                    class="img-fluid"
-                  />
-                  <div
-                    class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                    tabindex="0"
-                    aria-label="More about Fashion"
-                  >
-                    <strong>Fashion</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-5">
-            <div class="col-md-4 mb-3">
-              <h2 class="text-center purpletext">Art 1</h2>
-              <img
-                src="images/out-of-order.webp"
-                alt="art1"
-                class="img-fluid lazyload hover-opacity"
-                data-bs-toggle="modal"
-                data-bs-target="#image1Modal"
-                loading="lazy"
-              />
-              <h3 class="text-center mt-2">
-                Click on the image for a text description
-              </h3>
-              <div class="text-center mt-3">
-                <iframe
-                  style="border-radius: 12px"
-                  src="https://open.spotify.com/embed/episode/7gYHeUhUeuGfMaaN52Bgkb?utm_source=generator"
-                  width="100%"
-                  height="152"
-                  frameborder="0"
-                  allowfullscreen
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                ></iframe>
-              </div>
-              <div
-                class="modal fade"
-                id="image1Modal"
-                tabindex="-1"
-                aria-labelledby="image1ModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="image1ModalLabel">
-                        Artist 1
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <h4>Submission #1</h4>
-                      <p>
-                        Art:
-                        <img
-                          src="images/art_icon.jpeg"
-                          width="150"
-                          height="150"
-                          alt="Art icon"
-                        />
-                      </p>
-                      <hr class="hr" />
-                      <p>
-                        A thought-provoking illustration showing a broken
-                        elevator on a university campus with a student in a
-                        wheelchair looking at a sign reading 'Out of Order'.
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <h2 class="text-center purpletext">Art 2</h2>
-              <img
-                src="images/out-of-order.webp"
-                alt="art2"
-                class="img-fluid lazyload hover-opacity"
-                data-bs-toggle="modal"
-                data-bs-target="#image2Modal"
-                loading="lazy"
-              />
-              <h3 class="text-center mt-2">
-                Click on the image for a text description
-              </h3>
-              <div class="text-center mt-3">
-                <iframe
-                  style="border-radius: 12px"
-                  src="https://open.spotify.com/embed/episode/4iukilRVzXgSCMLrXAjgF6?utm_source=generator"
-                  width="100%"
-                  height="152"
-                  frameborder="0"
-                  allowfullscreen=""
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                ></iframe>
-              </div>
-              <div
-                class="modal fade"
-                id="image2Modal"
-                tabindex="-1"
-                aria-labelledby="image2ModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="image2ModalLabel">
-                        Artist 2
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <h4>Submission #2</h4>
-                      <p>
-                        Art:
-                        <img
-                          src="images/art_icon.jpeg"
-                          width="150"
-                          height="150"
-                          alt="art icon"
-                        />
-                      </p>
-                      <hr class="hr" />
-                      <p>
-                        A thought-provoking illustration showing a broken
-                        elevator on a university campus with a student in a
-                        wheelchair looking at a sign reading 'Out of Order'.
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <h2 class="text-center purpletext">Art 3</h2>
-              <img
-                src="images/out-of-order.webp"
-                alt="art3"
-                class="img-fluid lazyload hover-opacity"
-                data-bs-toggle="modal"
-                data-bs-target="#image3Modal"
-                loading="lazy"
-              />
-              <h3 class="text-center mt-2">
-                Click on the image for a text description
-              </h3>
-              <div class="text-center mt-3">
-                <iframe
-                  style="border-radius: 12px"
-                  src="https://open.spotify.com/embed/episode/5b3wjAppISkcCriw0xL6bw?utm_source=generator"
-                  width="100%"
-                  height="152"
-                  frameborder="0"
-                  allowfullscreen=""
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                ></iframe>
-              </div>
-              <div
-                class="modal fade"
-                id="image3Modal"
-                tabindex="-1"
-                aria-labelledby="image3ModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="image3ModalLabel">
-                        Artist 3
-                      </h4>
-                    </div>
-                    <div class="modal-body">
-                      <h4>Submission #3</h4>
-                      <p>
-                        Art:
-                        <img
-                          src="images/art_icon.jpeg"
-                          width="150"
-                          height="150"
-                          alt="art icon"
-                        />
-                      </p>
-                      <hr class="hr" />
-                      <p>
-                        A thought-provoking illustration showing a broken
-                        elevator on a university campus with a student in a
-                        wheelchair looking at a sign reading 'Out of Order'.
-                      </p>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="line"></div>
-          </div>
-        </section>
       </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-header text-dark">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree"
+          >
+            Sensory Information
+          </button>
+        </h3>
+        <div
+          id="panelsStayOpen-collapseThree"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <p>
+              <strong>Sensory Information:</strong> The
+              <a
+                href="https://www.tcd.ie/disability/"
+                target="_blank"
+                rel="nonopener"
+                >Trinity disAbility Service</a
+              >
+              (opens in a new tab) and TCD Sense developed the
+              <a href="https://tcdsensemap.ie/" target="_blank" rel="nonopener"
+                >TCD Sense Map</a
+              >
+              (opens in a new tab). The map is a core element of a major
+              initiative by the disAbility Service (DS),
+              <a
+                href="https://www.tcd.ie/disability/services/tcdsense.php"
+                target="_blank"
+                rel="nonopener"
+                >TCD Sense - The Trinity Sensory Processing Project</a
+              >
+              (opens in a new tab), to make Trinity more inclusive by developing
+              “different sensory environments, supports and resources to meet
+              the needs of all students and staff within Trinity”. It is an
+              interactive and empowering tool providing information about the
+              sensory environments of different areas of the college campus, as
+              well as tips on physical access, availability of power points,
+              seating, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header text-dark">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFour"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFour"
+          >
+            Charging Points
+          </button>
+        </h3>
+        <div
+          id="panelsStayOpen-collapseFour"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <p>Add information.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header text-dark">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFive"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFive"
+          >
+            Accessibility
+          </button>
+        </h3>
+        <div
+          id="panelsStayOpen-collapseFive"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <p>
+              The Trinity disAbility Hub in Printing House Square invites Deaf
+              and disabled students, staff, and visitors to an inclusive,
+              accessible and welcoming environment. For more information about
+              accessibility in An Mheitheal, you can check out the
+              <a
+                href="https://tcdsensemap.ie/space/printing-house-square-an-mheitheal"
+                target="_blank"
+                rel="nonopener"
+                >TCD Sense Map - An Mheitheal Space</a
+              >
+              (opens in a new tab).
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header text-dark">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseSeven"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseSeven"
+          >
+            Contact Info.
+          </button>
+        </h3>
+        <div
+          id="panelsStayOpen-collapseSeven"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <div class="container mt-3 mb-3">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a
+                    href="https://twitter.com/TCDAbility"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow disAbility Service on X"
+                    class="d-inline-flex align-items-center"
+                    >@TCDAbility</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <span class="flex-grow-1">Phone:</span>
+                  <a href="tel:+353%201%20896%203111" class="stretched-link"
+                    >+353 1 896 3111</a
+                  >
+                </li>
+                <li class="list-group-item">
+                  <a
+                    href="mailto:askdstcd.ie"
+                    class="d-flex align-items-center"
+                    aria-label="Send email to askds@tcd.ie"
+                    >askds@tcd.ie</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <section id="background" class="mt-4" aria-labelledby="background">
+        <h1 class="purpletext">Background</h1>
+        <p>
+          <span class="fs-1 fw-bold">2024</span> This year is the fourth year of
+          Trinity's Disability Art Exhibition, entitled
+          <strong>"Art for Action: Building an Inclusive Future!"</strong>. The
+          Trinity Provost & President Dr Linda Doyle will officially open the
+          Art for Action: Building an Inclusive Future! Exhibition, on Monday
+          2nd December at 5:30PM, in An Meitheal, Trinity disAbility Hub,
+          Printing House Square. This year's exhibition is a collaboration
+          between the Trinity Ability co_op, and the Trinity College Dublin
+          Student's Union (TCDSU). A huge thank you to the Trinity disAbility
+          Service, and Declan Treanor - disAbility Service Director, for their
+          help and support with the exhibition. Our sincerest thanks to all the
+          artists who submitted their extraordinary work!
+        </p>
+
+        <p>
+          <span class="fs-1 fw-bold">2023</span> The exhibition was entitled
+          <a
+            href="https://marklkm.github.io/BeyondBoundaries/"
+            target="_blank"
+            rel="nonopener"
+            >"Beyond Boundaries: Art Unleashed"</a
+          >
+          (Opens in a new window) and took place in An Mheitheal, Printing House
+          Square.
+        </p>
+        <p>
+          <span class="fs-1 fw-bold">2022</span> The exhibition took place in An
+          Mheitheal, Printing House Square with the theme
+
+          <a
+            href="https://marklkm.github.io/unique-exhibition/"
+            target="_blank"
+            rel="nonopener"
+            >“UNIQUE: A Disabled Perspective” </a
+          >(Opens in a new window).
+        </p>
+        <p>
+          <span class="fs-1 fw-bold">2021</span> The exhibition took place in
+          the Hamilton Zóin Mac Leinn with the theme
+
+          <a
+            href="https://www.youtube.com/watch?v=XFVd9k5CzK4&ab_channel=TrinityAbilityco_op"
+            target="_blank"
+            rel="nonopener"
+            >“Defining Disability”</a
+          >
+          (Opens in a new window).
+        </p>
+
+        <p>
+          <a
+            href="art-for-action-transcript.pdf"
+            class="btn btn-success mt-3 mb-3"
+            style="color: #ffffff; background-color: #12633d"
+            download="art-for-action-transcript.pdf"
+            aria-label="Download the full art work transcript as an accessible PDF document. A PDF reader is required. Alternatively, view the HTML version of the transcript."
+            >Download Art Work Transcript (PDF, 1MB) - A PDF reader is
+            required</a
+          ><br />
+          <a
+            href="transcript.html"
+            class="btn btn-secondary mt-3 mb-3"
+            aria-label="View the HTML version of the Art Work for full accessibility"
+            >View Art Work Transcript in HTML</a
+          >
+        </p>
+
+        <div class="line"></div>
+        <div class="container mt-5 mb-5">
+          <div class="row justify-content-center text-center">
+            <h2 class="w-100 mb-4 purpletext">Art Event Categories</h2>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+              <div class="icon-container position-relative">
+                <img
+                  src="images/art_icon.jpeg"
+                  alt="Art icon"
+                  class="img-fluid"
+                />
+                <div
+                  class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                  tabindex="0"
+                  aria-label="More about Spring"
+                >
+                  <strong>Art</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+              <div class="icon-container position-relative">
+                <img
+                  src="images/poetry_icon.png"
+                  alt="Poetry icon"
+                  class="img-fluid"
+                />
+                <div
+                  class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                  tabindex="0"
+                  aria-label="More about Art"
+                >
+                  <strong>Poetry</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+              <div class="icon-container position-relative">
+                <img
+                  src="images/sculpture_icon.png"
+                  alt="Sculpture icon"
+                  class="img-fluid"
+                />
+                <div
+                  class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                  tabindex="0"
+                  aria-label="More about Poetry"
+                >
+                  <strong>Sculpture</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+              <div class="icon-container position-relative">
+                <img
+                  src="images/film_icon.png"
+                  alt="Film Reel icon"
+                  class="img-fluid"
+                />
+                <div
+                  class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                  tabindex="0"
+                  aria-label="More about Sculpture"
+                >
+                  <strong>Mixed Media</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-2 d-flex justify-content-center">
+              <div class="icon-container position-relative">
+                <img
+                  src="images/fashion_icon.png"
+                  alt="Shop icon"
+                  class="img-fluid"
+                />
+                <div
+                  class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                  tabindex="0"
+                  aria-label="More about Fashion"
+                >
+                  <strong>Fashion</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 mb-3">
+            <h2 class="text-center purpletext">Art 1</h2>
+            <img
+              src="images/out-of-order.webp"
+              alt="art1"
+              class="img-fluid lazyload hover-opacity"
+              data-bs-toggle="modal"
+              data-bs-target="#image1Modal"
+              loading="lazy"
+            />
+            <h3 class="text-center mt-2">
+              Click on the image for a text description
+            </h3>
+            <div class="text-center mt-3">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/episode/7gYHeUhUeuGfMaaN52Bgkb?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div
+              class="modal fade"
+              id="image1Modal"
+              tabindex="-1"
+              aria-labelledby="image1ModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="image1ModalLabel">Artist 1</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Submission #1</h4>
+                    <p>
+                      Art:
+                      <img
+                        src="images/art_icon.jpeg"
+                        width="150"
+                        height="150"
+                        alt="Art icon"
+                      />
+                    </p>
+                    <hr class="hr" />
+                    <p>
+                      A thought-provoking illustration showing a broken elevator
+                      on a university campus with a student in a wheelchair
+                      looking at a sign reading 'Out of Order'.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h2 class="text-center purpletext">Art 2</h2>
+            <img
+              src="images/out-of-order.webp"
+              alt="art2"
+              class="img-fluid lazyload hover-opacity"
+              data-bs-toggle="modal"
+              data-bs-target="#image2Modal"
+              loading="lazy"
+            />
+            <h3 class="text-center mt-2">
+              Click on the image for a text description
+            </h3>
+            <div class="text-center mt-3">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/episode/4iukilRVzXgSCMLrXAjgF6?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div
+              class="modal fade"
+              id="image2Modal"
+              tabindex="-1"
+              aria-labelledby="image2ModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="image2ModalLabel">Artist 2</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Submission #2</h4>
+                    <p>
+                      Art:
+                      <img
+                        src="images/art_icon.jpeg"
+                        width="150"
+                        height="150"
+                        alt="art icon"
+                      />
+                    </p>
+                    <hr class="hr" />
+                    <p>
+                      A thought-provoking illustration showing a broken elevator
+                      on a university campus with a student in a wheelchair
+                      looking at a sign reading 'Out of Order'.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h2 class="text-center purpletext">Art 3</h2>
+            <img
+              src="images/out-of-order.webp"
+              alt="art3"
+              class="img-fluid lazyload hover-opacity"
+              data-bs-toggle="modal"
+              data-bs-target="#image3Modal"
+              loading="lazy"
+            />
+            <h3 class="text-center mt-2">
+              Click on the image for a text description
+            </h3>
+            <div class="text-center mt-3">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/episode/5b3wjAppISkcCriw0xL6bw?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div
+              class="modal fade"
+              id="image3Modal"
+              tabindex="-1"
+              aria-labelledby="image3ModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="image3ModalLabel">Artist 3</h4>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Submission #3</h4>
+                    <p>
+                      Art:
+                      <img
+                        src="images/art_icon.jpeg"
+                        width="150"
+                        height="150"
+                        alt="art icon"
+                      />
+                    </p>
+                    <hr class="hr" />
+                    <p>
+                      A thought-provoking illustration showing a broken elevator
+                      on a university campus with a student in a wheelchair
+                      looking at a sign reading 'Out of Order'.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+      </section>
+
       <div class="container mt-5">
         <section aria-labelledby="video-section">
           <h2 id="video-section" class="text-left purpletext">Artist Video</h2>
@@ -1256,22 +1263,56 @@
       </div>
     </footer>
 
-    <!-- High Contrast Button Script -->
+    <!-- JavaScript for High Contrast and Dyslexic Buttons -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var contrastToggle = document.getElementById("contrast-toggle");
+        var fontToggle = document.getElementById("font-toggle");
         var mainContent = document.getElementById("maincontent");
 
-        // Check for saved user preference
-        if (localStorage.getItem("highContrast") === "true") {
+        function updateContrastButtonLabel(isHighContrast) {
+          document.getElementById("contrast-label").textContent = isHighContrast
+            ? "Normal Contrast"
+            : "High Contrast";
+        }
+
+        function updateFontButtonLabel(isDyslexicFont) {
+          document.getElementById("font-label").textContent = isDyslexicFont
+            ? "Disable Dyslexic-Friendly Font"
+            : "Enable Dyslexic-Friendly Font";
+        }
+
+        // Check for saved user preferences
+        var highContrastEnabled =
+          localStorage.getItem("highContrast") === "true";
+        var dyslexicFontEnabled =
+          localStorage.getItem("dyslexicFont") === "true";
+
+        if (highContrastEnabled) {
           mainContent.classList.add("high-contrast");
           contrastToggle.setAttribute("aria-pressed", "true");
         }
+        updateContrastButtonLabel(highContrastEnabled);
 
+        if (dyslexicFontEnabled) {
+          mainContent.classList.add("dyslexic-font");
+          fontToggle.setAttribute("aria-pressed", "true");
+        }
+        updateFontButtonLabel(dyslexicFontEnabled);
+
+        // Event listeners for toggles
         contrastToggle.addEventListener("click", function () {
           var isHighContrast = mainContent.classList.toggle("high-contrast");
           this.setAttribute("aria-pressed", isHighContrast);
           localStorage.setItem("highContrast", isHighContrast);
+          updateContrastButtonLabel(isHighContrast);
+        });
+
+        fontToggle.addEventListener("click", function () {
+          var isDyslexicFont = mainContent.classList.toggle("dyslexic-font");
+          this.setAttribute("aria-pressed", isDyslexicFont);
+          localStorage.setItem("dyslexicFont", isDyslexicFont);
+          updateFontButtonLabel(isDyslexicFont);
         });
       });
     </script>
