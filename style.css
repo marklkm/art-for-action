@@ -440,3 +440,35 @@ h6 {
     margin-bottom: 20px;
   }
 }
+
+
+/* High Contrast Button */
+.high-contrast {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast p,
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast h4,
+.high-contrast h5,
+.high-contrast h6 {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast a {
+  color: #00ffff !important;
+}
+
+.high-contrast img {
+  filter: invert(1);
+}
+
+.high-contrast .btn {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-color: #fff !important;
+}
