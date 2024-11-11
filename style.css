@@ -132,6 +132,7 @@ a {
   background-image: none;
   color: #B5C355; /* Fallback for older browsers */
 
+
   /* Adding a solid color instead of the default icon */
   border: 2px solid #76842E;
   border-radius: 4px;
@@ -401,7 +402,7 @@ h6 {
 
   /* Adjust navbar layout for smaller screens */
   .navbar-brand img {
-    width: 100px; /* Adjust logo size for mobile */
+    width: 120px; /* Adjust logo size for mobile */
     height: auto;
   }
 
@@ -484,4 +485,17 @@ h6 {
 }
 
 
-/* Custom picture frame */
+/* Open Dyslexic font */
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('fonts/OpenDyslexic-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Dyslexic-friendly font class */
+.dyslexic-font {
+  font-family: 'OpenDyslexic', Arial, sans-serif;
+}
+
+
