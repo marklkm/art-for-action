@@ -85,13 +85,33 @@
     </nav>
     <main id="maincontent" tabindex="0" class="container" role="main">
       <!-- Contrast Toggle Button -->
-      <div class="text-start text-md-center mb-3 mt-3">
+      <!-- Accessibility Feature Buttons -->
+      <div class="d-flex flex-wrap justify-content-center mb-3">
+        <!-- Contrast Toggle Button -->
         <button
           id="contrast-toggle"
-          class="btn btn-secondary"
+          class="btn btn-secondary mt-2 mb-2 me-2"
           aria-pressed="false"
         >
-          Toggle High Contrast
+          <span id="contrast-label">High Contrast</span>
+        </button>
+
+        <!-- Font Toggle Button -->
+        <button
+          id="font-toggle"
+          class="btn btn-secondary mt-2 mb-2 me-2"
+          aria-pressed="false"
+        >
+          <span id="font-label">Enable Dyslexic-Friendly Font</span>
+        </button>
+
+        <!-- Increase Font Size Button -->
+        <button
+          id="increase-font-btn"
+          class="btn btn-secondary mt-2 mb-2"
+          aria-pressed="false"
+        >
+          Increase Font Size
         </button>
       </div>
       <div class="line"></div>
@@ -313,22 +333,74 @@
       </div>
     </footer>
 
-    <!-- High Contrast Button Script -->
+    <!-- JavaScript for High Contrast and Dyslexic Buttons -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var contrastToggle = document.getElementById("contrast-toggle");
+        var fontToggle = document.getElementById("font-toggle");
+        var increaseFontBtn = document.getElementById("increase-font-btn");
         var mainContent = document.getElementById("maincontent");
 
-        // Check for saved user preference
-        if (localStorage.getItem("highContrast") === "true") {
+        function updateContrastButtonLabel(isHighContrast) {
+          document.getElementById("contrast-label").textContent = isHighContrast
+            ? "Normal Contrast"
+            : "High Contrast";
+        }
+
+        function updateFontButtonLabel(isDyslexicFont) {
+          document.getElementById("font-label").textContent = isDyslexicFont
+            ? "Disable Dyslexic-Friendly Font"
+            : "Enable Dyslexic-Friendly Font";
+        }
+
+        // Check for saved user preferences
+        var highContrastEnabled =
+          localStorage.getItem("highContrast") === "true";
+        var dyslexicFontEnabled =
+          localStorage.getItem("dyslexicFont") === "true";
+        var isLargeFont = localStorage.getItem("isLargeFont") === "true";
+
+        if (highContrastEnabled) {
           mainContent.classList.add("high-contrast");
           contrastToggle.setAttribute("aria-pressed", "true");
         }
+        updateContrastButtonLabel(highContrastEnabled);
 
+        if (dyslexicFontEnabled) {
+          mainContent.classList.add("dyslexic-font");
+          fontToggle.setAttribute("aria-pressed", "true");
+        }
+        updateFontButtonLabel(dyslexicFontEnabled);
+
+        if (isLargeFont) {
+          mainContent.classList.add("large-font");
+          increaseFontBtn.setAttribute("aria-pressed", "true");
+          increaseFontBtn.textContent = "Normal Font Size";
+        }
+
+        // Event listeners for toggles
         contrastToggle.addEventListener("click", function () {
           var isHighContrast = mainContent.classList.toggle("high-contrast");
           this.setAttribute("aria-pressed", isHighContrast);
           localStorage.setItem("highContrast", isHighContrast);
+          updateContrastButtonLabel(isHighContrast);
+        });
+
+        fontToggle.addEventListener("click", function () {
+          var isDyslexicFont = mainContent.classList.toggle("dyslexic-font");
+          this.setAttribute("aria-pressed", isDyslexicFont);
+          localStorage.setItem("dyslexicFont", isDyslexicFont);
+          updateFontButtonLabel(isDyslexicFont);
+        });
+
+        increaseFontBtn.addEventListener("click", function () {
+          mainContent.classList.toggle("large-font");
+          isLargeFont = mainContent.classList.contains("large-font");
+          this.setAttribute("aria-pressed", isLargeFont);
+          this.textContent = isLargeFont
+            ? "Normal Font Size"
+            : "Increase Font Size";
+          localStorage.setItem("isLargeFont", isLargeFont);
         });
       });
     </script>
