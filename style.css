@@ -484,6 +484,30 @@ h6 {
   color: #fff !important;
 }
 
+/* Increase font size button */
+.large-font p,
+.large-font h1,
+.large-font h2,
+.large-font h3,
+.large-font h4,
+.large-font h5,
+.large-font h6,
+.large-font button,
+.large-font address,
+.large-font li,
+.large-font a,
+.large-font span,
+.large-font strong,
+.large-font em,
+.large-font .purpletext {
+  font-size: 2rem !important;
+}
+
+/* Optional: Style for .purpletext class */
+.purpletext {
+  color: purple;
+}
+
 
 /* Open Dyslexic font */
 @font-face {
