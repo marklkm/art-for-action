@@ -16,8 +16,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -84,45 +84,56 @@
       </div>
     </nav>
     <main id="maincontent" tabindex="0" class="container" role="main">
-      <!-- Contrast Toggle Button -->
-      <!-- Accessibility Feature Buttons -->
-      <div class="d-flex flex-wrap justify-content-center mb-3">
-        <!-- Contrast Toggle Button -->
-        <button
-          id="contrast-toggle"
-          class="btn btn-secondary mt-2 mb-2 me-2"
-          aria-pressed="false"
-        >
-          <span id="contrast-label">High Contrast</span>
-        </button>
+      <h1 id="transcript-heading" class="text-center my-5">
+        Art for Action Transcript
+      </h1>
 
-        <!-- Font Toggle Button -->
-        <button
-          id="font-toggle"
-          class="btn btn-secondary mt-2 mb-2 me-2"
-          aria-pressed="false"
-        >
-          <span id="font-label">Enable Dyslexic-Friendly Font</span>
-        </button>
+      <!-- Accessibility Options Section -->
+      <section class="container my-4">
+        <div class="text-center">
+          <!-- Heading with Accessibility Icon -->
+          <h2 class="mt-4 mb-4">
+            <i class="bi bi-universal-access"></i>
+            Accessibility Options
+          </h2>
 
-        <!-- Increase Font Size Button -->
-        <button
-          id="increase-font-btn"
-          class="btn btn-secondary mt-2 mb-2"
-          aria-pressed="false"
-        >
-          Increase Font Size
-        </button>
-      </div>
+          <!-- Accessibility Feature Buttons -->
+          <div class="d-flex flex-wrap justify-content-center mb-3">
+            <!-- Contrast Toggle Button -->
+            <button
+              id="contrast-toggle"
+              class="btn btn-secondary mt-2 mb-2 me-2"
+              aria-pressed="false"
+            >
+              <span id="contrast-label">High Contrast</span>
+            </button>
+
+            <!-- Font Toggle Button -->
+            <button
+              id="font-toggle"
+              class="btn btn-secondary mt-2 mb-2 me-2"
+              aria-pressed="false"
+            >
+              <span id="font-label">Enable Dyslexic-Friendly Font</span>
+            </button>
+
+            <!-- Increase Font Size Button -->
+            <button
+              id="increase-font-btn"
+              class="btn btn-secondary mt-2 mb-2"
+              aria-pressed="false"
+            >
+              Increase Font Size
+            </button>
+          </div>
+        </div>
+      </section>
       <div class="line"></div>
       <section
         id="art-transcript"
         class="container my-5 p-4"
         aria-labelledby="transcript-heading"
       >
-        <h2 id="transcript-heading" class="text-center mb-4">
-          Art for Action Transcript
-        </h2>
         <div class="accordion" id="transcriptAccordion">
           <!-- Artist 1 -->
           <div class="accordion-item">
