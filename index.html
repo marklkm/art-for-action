@@ -123,50 +123,51 @@
 
     <main id="maincontent" tabindex="0" class="container" role="main">
       <div class="container mt-5 mb-4" role="banner">
-        <!-- Accessibility Options Section -->
-        <section class="container my-4">
-          <div class="text-center">
-            <!-- Heading with Accessibility Icon -->
-            <h2 class="mb-4">
-              <i class="bi bi-universal-access"></i>
-              Accessibility Options
-            </h2>
-
-            <!-- Accessibility Feature Buttons -->
-            <div class="d-flex flex-wrap justify-content-center mb-3">
-              <!-- Contrast Toggle Button -->
-              <button
-                id="contrast-toggle"
-                class="btn btn-secondary mt-2 mb-2 me-2"
-                aria-pressed="false"
-              >
-                <span id="contrast-label">High Contrast</span>
-              </button>
-
-              <!-- Font Toggle Button -->
-              <button
-                id="font-toggle"
-                class="btn btn-secondary mt-2 mb-2 me-2"
-                aria-pressed="false"
-              >
-                <span id="font-label">Enable Dyslexic-Friendly Font</span>
-              </button>
-
-              <!-- Increase Font Size Button -->
-              <button
-                id="increase-font-btn"
-                class="btn btn-secondary mt-2 mb-2"
-                aria-pressed="false"
-              >
-                Increase Font Size
-              </button>
-            </div>
-          </div>
-        </section>
-
         <!-- Intro section - start -->
         <section>
-          <h1 class="purpletext">Art for Action</h1>
+          <header class="text-center mt-4">
+            <h1 class="display-4 purpletext">Art for Action</h1>
+          </header>
+          <!-- Accessibility Options Section -->
+          <section class="container my-4">
+            <div class="text-center">
+              <!-- Heading with Accessibility Icon -->
+              <h2 class="mb-4">
+                <i class="bi bi-universal-access"></i>
+                Accessibility Options
+              </h2>
+
+              <!-- Accessibility Feature Buttons -->
+              <div class="d-flex flex-wrap justify-content-center mb-3">
+                <!-- Contrast Toggle Button -->
+                <button
+                  id="contrast-toggle"
+                  class="btn btn-secondary mt-2 mb-2 me-2"
+                  aria-pressed="false"
+                >
+                  <span id="contrast-label">High Contrast</span>
+                </button>
+
+                <!-- Font Toggle Button -->
+                <button
+                  id="font-toggle"
+                  class="btn btn-secondary mt-2 mb-2 me-2"
+                  aria-pressed="false"
+                >
+                  <span id="font-label">Enable Dyslexic-Friendly Font</span>
+                </button>
+
+                <!-- Increase Font Size Button -->
+                <button
+                  id="increase-font-btn"
+                  class="btn btn-secondary mt-2 mb-2"
+                  aria-pressed="false"
+                >
+                  Increase Font Size
+                </button>
+              </div>
+            </div>
+          </section>
           <div class="container-fluid p-0 mt-3">
             <div class="row">
               <div class="col-md-6">
@@ -1421,6 +1422,19 @@
           localStorage.setItem("isLargeFont", isLargeFont);
         });
       });
+    </script>
+
+    <!-- large font for h1 tag -->
+    <script>
+      // Set initial font size for the heading
+      let fontSize = 2.5; // Starting font size in rem
+
+      // Function to increase font size
+      function increaseFontSize() {
+        fontSize += 0.2; // Increment font size by 0.2rem
+        document.getElementById("main-heading").style.fontSize =
+          fontSize + "rem";
+      }
     </script>
 
     <script src="lazysizes.min.js"></script>

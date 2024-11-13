@@ -53,12 +53,7 @@ html, body {
   margin: 40px 0;
 }
 
-.purpletext {
-  color: #6B00D6;
-  display: inline;
-  margin-top: 20px;
-  font-size: 2.5em;
-}
+
 
 .whitetext {
   color: #ffffff;
@@ -113,9 +108,7 @@ a {
   }
   
   /* Larger Font Styles */
-  .large-font {
-    font-size: 20px;
-  }
+
 
 
 
@@ -496,14 +489,16 @@ h6 {
   color: #fff !important;
 }
 
+
+
 /* Increase font size button */
-.large-font p,
 .large-font h1,
 .large-font h2,
 .large-font h3,
 .large-font h4,
 .large-font h5,
 .large-font h6,
+.large-font p,
 .large-font button,
 .large-font address,
 .large-font li,
@@ -511,13 +506,16 @@ h6 {
 .large-font span,
 .large-font strong,
 .large-font em,
-.large-font .purpletext {
+.large-font .purpletext,
+.large-font .display-4 { /* Add .display-4 here */
   font-size: 2rem !important;
 }
 
 /* Optional: Style for .purpletext class */
 .purpletext {
-  color: purple;
+  color: #6B00D6;
+  margin-top: 10px;
+  font-size: 2.5em;
 }
 
 
