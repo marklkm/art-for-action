@@ -20,7 +20,21 @@ html, body {
 /* Focus outline for accessibility */
 :focus {
   /*outline: 3px solid #005fcc; /* High-contrast outline for focused elements */
-    outline: none;
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 4px 2px rgba(255, 87, 34, 0.8); /* Add a glowing effect */
+  border: 2px solid #ff5722; /* Add a custom border */
+  border-radius: 4px; /* Optional: Rounded corners for aesthetic */
+}
+
+/* Specific elements */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 6px 2px rgba(0, 123, 255, 0.8); /* Distinct glow */
+    background-color: rgba(0, 123, 255, 0.1); /* Subtle background change */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
 
 /* Body Content Container */
@@ -208,8 +222,8 @@ li,
   font-size: 20px !important;
 }
 
-p {
-  font-size: 19px;
+p, address {
+  font-size: 22px;
 }
 
 img.stops {
@@ -318,6 +332,7 @@ h6 {
     max-width: none; /* Ensure there is no restriction on the width */
   }
 
+  
 
 /* CSS style for top of page button */
 
@@ -514,7 +529,6 @@ h6 {
 .large-font span,
 .large-font strong,
 .large-font em,
-.large-font .purpletext,
 .large-font .display-4 { /* Add .display-4 here */
   font-size: 2rem !important;
 }
