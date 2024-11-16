@@ -19,7 +19,8 @@ html, body {
 
 /* Focus outline for accessibility */
 :focus {
-  outline: 3px solid #005fcc; /* High-contrast outline for focused elements */
+  /*outline: 3px solid #005fcc; /* High-contrast outline for focused elements */
+    outline: none;
 }
 
 /* Body Content Container */
