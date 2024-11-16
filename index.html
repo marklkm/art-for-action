@@ -1418,19 +1418,6 @@
       });
     </script>
 
-    <!-- large font for h1 tag -->
-    <script>
-      // Set initial font size for the heading
-      let fontSize = 2.5; // Starting font size in rem
-
-      // Function to increase font size
-      function increaseFontSize() {
-        fontSize += 0.2; // Increment font size by 0.2rem
-        document.getElementById("main-heading").style.fontSize =
-          fontSize + "rem";
-      }
-    </script>
-
     <script src="lazysizes.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -1466,6 +1453,12 @@
             behavior: "smooth", // Optional: for smooth scrolling
           });
         });
+    </script>
+
+    <script>
+      function increaseFontSize() {
+        document.getElementById("maincontent").classList.toggle("large-font");
+      }
     </script>
   </body>
 </html>
