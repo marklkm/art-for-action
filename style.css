@@ -18,13 +18,13 @@ html, body {
 }
 
 /* Focus outline for accessibility */
-:focus {
+/*:focus { */
   /*outline: 3px solid #005fcc; /* High-contrast outline for focused elements */
-  outline: none; /* Remove default focus outline */
-  box-shadow: 0 0 4px 2px rgba(255, 87, 34, 0.8); /* Add a glowing effect */
-  border: 2px solid #ff5722; /* Add a custom border */
-  border-radius: 4px; /* Optional: Rounded corners for aesthetic */
-}
+  /*outline: none; */ /* Remove default focus outline */
+  /*box-shadow: 0 0 4px 2px rgba(255, 87, 34, 0.8); /* Add a glowing effect */
+  /*border: 2px solid #ff5722; /* Add a custom border */
+  /*border-radius: 4px; /* Optional: Rounded corners for aesthetic */
+/*}*/
 
 /* Specific elements */
 button:focus,
