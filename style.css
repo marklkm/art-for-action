@@ -75,6 +75,9 @@ textarea:focus {
   margin: 40px 0;
 }
 
+h1, h2, h3, h5, h6 {
+  color: #6B00D6;
+}
 
 
 .whitetext {
@@ -528,8 +531,7 @@ h6 {
 .large-font a,
 .large-font span,
 .large-font strong,
-.large-font em,
-.large-font .display-4 { /* Add .display-4 here */
+.large-font em { /* Add .display-4 here */
   font-size: 2rem !important;
 }
 
