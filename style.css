@@ -545,8 +545,9 @@ h6 {
 .large-font a,
 .large-font span,
 .large-font strong,
+.large-font .custom-heading,
 .large-font em { /* Add .display-4 here */
-  font-size: 2rem !important;
+  font-size: 2.125rem !important;
 }
 
 /* Optional: Style for .purpletext class */
