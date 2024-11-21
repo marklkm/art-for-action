@@ -83,6 +83,20 @@ textarea:focus {
 }
 
 
+/* custom banner */
+.banner {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #ffffff; /* Optional: Background color behind image */
+}
+.banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
 .line {
   width: 100%;
   height: 1px;
