@@ -529,7 +529,25 @@ h6 {
   color: #fff !important;
 }
 
+/* paintbrush underline for text */
+.paintbrush-underline {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif; /* Use a clean, accessible font */
+  color: #6B00D6; /* High contrast for accessibility */
+}
 
+.paintbrush-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px; /* Adjust height to resemble a brush stroke */
+  background: url('images/paintbrush_underline.png') repeat-x;
+  background-size: contain; /* Ensure the brush stroke fits well */
+  bottom: -5px; /* Adjust positioning for the underline */
+  left: 0;
+  z-index: -1;
+}
 
 /* Increase font size button */
 .large-font h1,
