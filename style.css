@@ -82,6 +82,19 @@ textarea:focus {
   text-align: center;
 }
 
+/* DNA styling */
+.dna-grid {
+  text-align: center;
+}
+.dna-letter {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #6B00D6;
+}
+.dna-description {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
 
 /* custom banner */
 .banner {
