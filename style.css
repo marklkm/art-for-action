@@ -76,8 +76,10 @@ textarea:focus {
 
 /* custom hr divider */
 hr {
-  border-top: 2px solid #6B00D6;
+  border-top: 3px solid #6B00D6;
 }
+
+
 
 
 /* custom heading */
