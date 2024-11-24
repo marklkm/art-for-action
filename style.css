@@ -74,6 +74,12 @@ textarea:focus {
   text-align: center;
 }
 
+/* custom hr divider */
+hr {
+  border-top: 2px solid #6B00D6;
+}
+
+
 /* custom heading */
 .custom-heading {
   font-size: 3.125em;
