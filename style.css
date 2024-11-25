@@ -86,6 +86,10 @@ hr {
   cursor: zoom-out; /* Optional: Changes cursor to indicate zoom-out */
 }
 
+/* text accessible pink */
+.text-accessible-pink {
+  color: #e75480 !important; /* A darker pink for better contrast */
+}
 
 
 
