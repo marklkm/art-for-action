@@ -80,6 +80,14 @@ hr {
 }
 
 
+/* Container to apply the zoom effect */
+.zoomed {
+  transform: scale(1.5); /* Adjust zoom level as needed */
+  cursor: zoom-out; /* Optional: Changes cursor to indicate zoom-out */
+}
+
+
+
 
 
 /* custom heading */
