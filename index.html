@@ -68,16 +68,30 @@
       }
     </style>
     <script type="text/javascript">
-      function googleTranslateElementInit() {
+      // Google Translate initialization
+      function loadGoogleTranslate() {
         new google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            includedLanguages: "en,ga", // Include both English and Irish here
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          },
+          { pageLanguage: "en" },
           "google_translate_element"
         );
       }
+
+      function triggerTranslate() {
+        if (typeof google !== "undefined" && google.translate) {
+          loadGoogleTranslate();
+        } else {
+          alert("Google Translate is not available right now.");
+        }
+      }
+
+      // Dynamically load Google Translate script
+      (function () {
+        const script = document.createElement("script");
+        script.src =
+          "https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate";
+        script.defer = true;
+        document.body.appendChild(script);
+      })();
     </script>
 
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -134,17 +148,6 @@
     </nav>
     <main id="maincontent" tabindex="0" class="container" role="main">
       <div class="container mt-5 mb-4 text-center" role="banner">
-        <div
-          class="container mt-3 mb-3"
-          role="region"
-          aria-label="Page translator"
-        >
-          <label for="google_translate_element" class="sr-only"
-            >Translate this page</label
-          >
-          <div id="google_translate_element" class="text-center"></div>
-        </div>
-
         <header class="banner">
           <img
             src="images/art-event-paintbrush-line.png"
@@ -182,6 +185,32 @@
                 </button>
               </div>
             </div>
+            <!-- translate page start -->
+            <div
+              class="container mt-3 mb-3 text-center"
+              role="region"
+              aria-label="Page translator"
+            >
+              <button
+                class="btn btn-primary"
+                aria-label="Translate this page"
+                onclick="triggerTranslate()"
+              >
+                Translate this Page
+              </button>
+              <button
+                class="btn btn-primary"
+                onclick="location.reload()"
+                aria-label="Reload this page"
+              >
+                Reload Page
+              </button>
+              <div
+                id="google_translate_element"
+                class="text-center mt-2 mb-2"
+              ></div>
+            </div>
+            <!-- translate page end -->
           </section>
 
           <section class="container-fluid py-4">
