@@ -149,255 +149,251 @@
     <main id="maincontent" tabindex="0" class="container" role="main">
       <div class="container mt-5 mb-4 text-center" role="banner">
         <header class="banner">
-          <img
-            src="images/art-event-paintbrush-line.png"
-            alt="Logo with the text 'Art for Action' in bold purple font"
-          />
+          <h1 class="custom-heading">Art for Action Online Guide</h1>
         </header>
-        <section>
-          <section class="container my-4">
-            <div class="text-center">
-              <h1 class="mb-4">
-                <i class="bi bi-universal-access-circle"></i>&nbsp;Accessibility
-                Options
-              </h1>
-              <div class="d-flex flex-wrap justify-content-center mb-3">
-                <button
-                  id="contrast-toggle"
-                  class="btn btn-secondary mt-2 mb-2 me-2"
-                  aria-pressed="false"
-                >
-                  <span id="contrast-label">High Contrast</span>
-                </button>
-                <button
-                  id="font-toggle"
-                  class="btn btn-secondary mt-2 mb-2 me-2"
-                  aria-pressed="false"
-                >
-                  <span id="font-label">Enable Dyslexic-Friendly Font</span>
-                </button>
-                <button
-                  id="increase-font-btn"
-                  class="btn btn-secondary mt-2 mb-2 me-2"
-                  aria-pressed="false"
-                >
-                  Increase Font Size
-                </button>
-              </div>
+
+        <!-- Section 1 -->
+        <section class="container my-4">
+          <div class="text-center">
+            <h2 class="mb-4">
+              <i class="bi bi-universal-access-circle"></i>&nbsp;Accessibility
+              Options
+            </h2>
+            <div class="d-flex flex-wrap justify-content-center mb-3">
+              <button
+                id="contrast-toggle"
+                class="btn btn-secondary mt-2 mb-2 me-2"
+                aria-pressed="false"
+              >
+                <span id="contrast-label">High Contrast</span>
+              </button>
+              <button
+                id="font-toggle"
+                class="btn btn-secondary mt-2 mb-2 me-2"
+                aria-pressed="false"
+              >
+                <span id="font-label">Enable Dyslexic-Friendly Font</span>
+              </button>
+              <button
+                id="increase-font-btn"
+                class="btn btn-secondary mt-2 mb-2 me-2"
+                aria-pressed="false"
+              >
+                Increase Font Size
+              </button>
             </div>
-            <!-- translate page start -->
-            <div
-              class="container mt-3 mb-3 text-center"
-              role="region"
-              aria-label="Page translator"
+          </div>
+          <!-- translate page start -->
+          <div
+            class="container mt-3 mb-3 text-center"
+            role="region"
+            aria-label="Page translator"
+          >
+            <button
+              class="btn btn-primary mt-2 mb-2 me-2"
+              aria-label="Translate this page"
+              onclick="triggerTranslate()"
             >
-              <button
-                class="btn btn-primary mt-2 mb-2 me-2"
-                aria-label="Translate this page"
-                onclick="triggerTranslate()"
-              >
-                Translate this Page
-              </button>
-              <button
-                class="btn btn-primary mt-2 mb-2 me-2"
-                onclick="location.reload()"
-                aria-label="Reload this page"
-              >
-                Reload Page
-              </button>
-              <div
-                id="google_translate_element"
-                class="text-center mt-2 mb-2"
-              ></div>
-            </div>
-            <!-- translate page end -->
-          </section>
+              Translate this Page
+            </button>
+            <button
+              class="btn btn-primary mt-2 mb-2 me-2"
+              onclick="location.reload()"
+              aria-label="Reload this page"
+            >
+              Reload Page
+            </button>
+            <div
+              id="google_translate_element"
+              class="text-center mt-2 mb-2"
+            ></div>
+          </div>
+          <!-- translate page end -->
+        </section>
 
-          <section class="container-fluid py-4">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <div class="ratio ratio-4x3">
-                  <img
-                    src="images/boy-geometric-shapes.png"
-                    class="img-fluid rounded custom-img-size"
-                    alt="Abstract artwork of a boy's face with fragmented elements"
-                    style="object-fit: cover; width: 100%; height: 100%"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <div class="ratio ratio-4x3">
-                  <img
-                    src="images/dont-silence-disability.jpg"
-                    class="img-fluid rounded custom-img-size"
-                    alt="Girl in a hoodie covering her mouth with a hand labeled Silence"
-                    style="object-fit: cover; width: 100%; height: 100%"
-                  />
-                </div>
+        <!-- Section 2 -->
+        <section class="container-fluid py-4">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="ratio ratio-4x3">
+                <img
+                  src="images/boy-geometric-shapes.png"
+                  class="img-fluid rounded custom-img-size"
+                  alt="Abstract artwork of a boy's face with fragmented elements"
+                  style="object-fit: cover; width: 100%; height: 100%"
+                />
               </div>
             </div>
+            <div class="col-md-6 mb-3">
+              <div class="ratio ratio-4x3">
+                <img
+                  src="images/dont-silence-disability.jpg"
+                  class="img-fluid rounded custom-img-size"
+                  alt="Girl in a hoodie covering her mouth with a hand labeled Silence"
+                  style="object-fit: cover; width: 100%; height: 100%"
+                />
+              </div>
+            </div>
+          </div>
 
-            <div class="row">
-              <div class="col-12 text-center">
-                <h2 class="text-center">
-                  Art for Action: Building an Inclusive Future!
-                </h2>
-                <p class="mt-3 text-center lead">
-                  This is the fourth year of Trinity's DisAbility Art
-                  Exhibition, entitled "Art for Action: Building an Inclusive
-                  Future!" The exhibition will run from Monday 2nd through to
-                  Friday 6th December in An Mheitheal, Trinity disAbility Hub,
-                  Printing House Square. A huge thank you to the Trinity
-                  disAbility Service, as well as Declan Treanor (Disability
-                  Service Director) and Odhrán Mc Laughlin (Project
-                  Administrator), for their help and support with the
-                  exhibition. We'd like to thank all the artists who submitted
-                  their extraordinary and thought-provoking work!
-                </p>
-                <p>
-                  The Art for Action Exhibition will be offically launched by
-                  Trinity College Dublin Provost Dr Linda Doyle, on the 2nd
-                  December at 18:00, in An Mheitheal, Trinity disAbility Hub,
-                  Printing House Square.
-                </p>
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="text-center">
+                Art for Action: Building an Inclusive Future!
+              </h2>
+              <p class="mt-3 text-center lead">
+                This is the fourth year of Trinity's DisAbility Art Exhibition,
+                entitled "Art for Action: Building an Inclusive Future!" The
+                exhibition will run from Monday 2nd through to Friday 6th
+                December in An Mheitheal, Trinity disAbility Hub, Printing House
+                Square. A huge thank you to the Trinity disAbility Service, as
+                well as Declan Treanor (Disability Service Director) and Odhrán
+                Mc Laughlin (Project Administrator), for their help and support
+                with the exhibition. We'd like to thank all the artists who
+                submitted their extraordinary and thought-provoking work!
+              </p>
+              <p>
+                The Art for Action Exhibition will be offically launched by
+                Trinity College Dublin Provost Dr Linda Doyle, on the 2nd
+                December at 18:00, in An Mheitheal, Trinity disAbility Hub,
+                Printing House Square.
+              </p>
 
-                <p>
-                  "Art for Action: Building an Inclusive Future!" is an
-                  inspiring art exhibition that invites disabled students to
-                  express their unique perspectives and creativity through art.
-                  Held during Disability Week, this event celebrates disability
-                  as an integral part of personal identity—challenging the
-                  misconceptions that disability is merely a flaw or loss.
-                  Instead, "Art for Action" emphasises that disability
-                  contributes a distinct richness to our communities,
-                  encouraging us to see it as a source of pride and strength. As
-                  we envision a more inclusive future, disability must be
-                  central to that vision, fostering a world where diverse ways
-                  of experiencing and navigating life are embraced and valued.
-                  By showcasing the artistry and resilience of disabled
-                  students, this exhibition aims to broaden societal
-                  understanding and build a foundation for inclusion, where
-                  everyone's voice and perspective contribute to a vibrant,
-                  multifaceted community.
-                </p>
-                <h3>Don't Silence Disability!</h3>
+              <p>
+                "Art for Action: Building an Inclusive Future!" is an inspiring
+                art exhibition that invites disabled students to express their
+                unique perspectives and creativity through art. Held during
+                Disability Week, this event celebrates disability as an integral
+                part of personal identity—challenging the misconceptions that
+                disability is merely a flaw or loss. Instead, "Art for Action"
+                emphasises that disability contributes a distinct richness to
+                our communities, encouraging us to see it as a source of pride
+                and strength. As we envision a more inclusive future, disability
+                must be central to that vision, fostering a world where diverse
+                ways of experiencing and navigating life are embraced and
+                valued. By showcasing the artistry and resilience of disabled
+                students, this exhibition aims to broaden societal understanding
+                and build a foundation for inclusion, where everyone's voice and
+                perspective contribute to a vibrant, multifaceted community.
+              </p>
+              <h3>Don't Silence Disability!</h3>
 
-                <!-- DNA Start -->
-                <div class="container my-5">
-                  <div class="row dna-grid">
-                    <div class="col-md-4">
-                      <div>
-                        <div class="dna-letter" aria-label="D">D</div>
-                        <div class="dna-description" aria-label="Disability">
-                          Disability
-                        </div>
+              <!-- DNA Start -->
+              <div class="container my-5">
+                <div class="row dna-grid">
+                  <div class="col-md-4">
+                    <div>
+                      <div class="dna-letter" aria-label="D">D</div>
+                      <div class="dna-description" aria-label="Disability">
+                        Disability
                       </div>
                     </div>
-                    <div class="col-md-4">
-                      <div>
-                        <div class="dna-letter" aria-label="N">N</div>
-                        <div
-                          class="dna-description"
-                          aria-label="Neurodiversity"
-                        >
-                          Neurodiversity
-                        </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div>
+                      <div class="dna-letter" aria-label="N">N</div>
+                      <div class="dna-description" aria-label="Neurodiversity">
+                        Neurodiversity
                       </div>
                     </div>
-                    <div class="col-md-4">
-                      <div>
-                        <div class="dna-letter" aria-label="A">A</div>
-                        <div class="dna-description" aria-label="Ability">
-                          Ability
-                        </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div>
+                      <div class="dna-letter" aria-label="A">A</div>
+                      <div class="dna-description" aria-label="Ability">
+                        Ability
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- DNA End -->
               </div>
+              <!-- DNA End -->
             </div>
-          </section>
+          </div>
+        </section>
 
-          <div class="line"></div>
+        <div class="line"></div>
 
-          <section class="container-fluid py-5">
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-8 d-flex justify-content-center">
-                <img
-                  src="images/art-for-action-poster-6.webp"
-                  class="img-fluid rounded shadow-lg"
-                  alt="Poster for 'Art for Action' featuring an abstract artwork in a wooden frame"
-                />
-              </div>
+        <!-- Section 3 -->
+        <section class="container-fluid py-5">
+          <h2 class="my-4">Promotional Poster for Art for Action</h2>
+
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 d-flex justify-content-center">
+              <img
+                src="images/art-for-action-poster-6.webp"
+                class="img-fluid rounded shadow-lg"
+                alt="Poster for 'Art for Action' featuring an abstract artwork in a wooden frame"
+              />
             </div>
-            <div class="row justify-content-center mt-4">
-              <div class="col-12 col-lg-8 text-center">
-                <p>
-                  Promotional poster for Art for Action: Building an inclusive
-                  future!
-                </p>
-                <p>
-                  <strong>ALT Description: </strong>Poster for 'Art for Action:
-                  Building an Inclusive Future!' event, featuring a modern art
-                  piece with an abstract collage of a face, geometric shapes,
-                  and vibrant orange tones in a wooden frame. The event is
-                  scheduled for 2nd to 6th December 2024 at An Mheitheal,
-                  Printing House Square, Trinity College Dublin. The bottom
-                  includes logos of Trinity College Dublin and the Trinity
-                  disAbility Hub, with a QR code for more information.
-                </p>
-              </div>
+          </div>
+          <div class="row justify-content-center mt-4">
+            <div class="col-12 col-lg-8 text-center">
+              <p>
+                <strong>ALT Description: </strong>Poster for 'Art for Action:
+                Building an Inclusive Future!' event, featuring a modern art
+                piece with an abstract collage of a face, geometric shapes, and
+                vibrant orange tones in a wooden frame. The event is scheduled
+                for 2nd to 6th December 2024 at An Mheitheal, Printing House
+                Square, Trinity College Dublin. The bottom includes logos of
+                Trinity College Dublin and the Trinity disAbility Hub, with a QR
+                code for more information.
+              </p>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <div class="line"></div>
-          <section class="mt-4" id="onlineguide">
-            <h2>Online Guide</h2>
-            <p class="text-justify">
-              <strong
-                >Welcome to the Online Guide for
-                <em>Art for Action: Building an Inclusive Future!</em></strong
-              ><br />
-              Now in its fourth year, Trinity's DisAbility Art Exhibition
-              continues to celebrate creativity, diversity, and inclusion. This
-              year's exhibition, running from
-              <strong>Monday 2nd December to Friday 6th December 2024</strong>,
-              is hosted in<strong> An Mheitheal</strong>, Trinity disAbility
-              Hub, Printing House Square.
-            </p>
-            <p class="text-justify">
-              The theme, <em>"Building an Inclusive Future,"</em> emphasises the
-              importance of breaking down barriers and creating accessible
-              spaces for everyone. Inclusion is not just a goal but an ongoing
-              commitment to systemic change—ensuring equality and accessibility
-              for people with disabilities in every aspect of life.
-            </p>
-            <p class="text-justify">
-              We extend our thanks to the Trinity disAbility Service, Declan
-              Treanor (Disability Service Director), Odhrán Mc Laughlin (Project
-              Administrator), Mark Likeman (Online Guide), and all the talented
-              artists whose extraordinary and thought-provoking work brings this
-              vision to life. Let this exhibition inspire action beyond its
-              duration—because true inclusion is enduring and transformative.
-              Together, let's build an inclusive future.
-            </p>
+        <div class="line"></div>
 
-            <p>
-              <i class="bi bi-headphones"></i>
-              <strong>&nbsp;Noise Cancelling Headphones</strong>
-              are available on request.
-            </p>
+        <!-- Section 4 -->
+        <section class="mt-4" id="onlineguide">
+          <h2>Online Guide</h2>
+          <p class="text-justify">
+            <strong
+              >Welcome to the Online Guide for
+              <em>Art for Action: Building an Inclusive Future!</em></strong
+            ><br />
+            Now in its fourth year, Trinity's DisAbility Art Exhibition
+            continues to celebrate creativity, diversity, and inclusion. This
+            year's exhibition, running from
+            <strong>Monday 2nd December to Friday 6th December 2024</strong>, is
+            hosted in<strong> An Mheitheal</strong>, Trinity disAbility Hub,
+            Printing House Square.
+          </p>
+          <p class="text-justify">
+            The theme, <em>"Building an Inclusive Future,"</em> emphasises the
+            importance of breaking down barriers and creating accessible spaces
+            for everyone. Inclusion is not just a goal but an ongoing commitment
+            to systemic change—ensuring equality and accessibility for people
+            with disabilities in every aspect of life.
+          </p>
+          <p class="text-justify">
+            We extend our thanks to the Trinity disAbility Service, Declan
+            Treanor (Disability Service Director), Odhrán Mc Laughlin (Project
+            Administrator), Mark Likeman (Online Guide), and all the talented
+            artists whose extraordinary and thought-provoking work brings this
+            vision to life. Let this exhibition inspire action beyond its
+            duration—because true inclusion is enduring and transformative.
+            Together, let's build an inclusive future.
+          </p>
 
-            <p>
-              Trinity disAbility Service also provides an opportunity for
-              visitors who are blind or have low vision to experience the
-              richness and diversity of the
-              <strong>Art for Action </strong>event.
-              <a href="mailto:askds@tcd.ie">Contact us at askds@tcd.ie</a>
-              for further details.
-            </p>
-          </section>
+          <p>
+            <i class="bi bi-headphones"></i>
+            <strong>&nbsp;Noise Cancelling Headphones</strong>
+            are available on request.
+          </p>
+
+          <p>
+            Trinity disAbility Service also provides an opportunity for visitors
+            who are blind or have low vision to experience the richness and
+            diversity of the
+            <strong>Art for Action </strong>event.
+            <a href="mailto:askds@tcd.ie">Contact us at askds@tcd.ie</a>
+            for further details.
+          </p>
+        </section>
+        <!-- Section 5 -->
+        <section>
           <div class="row">
             <div class="col-12">
               <div
@@ -408,8 +404,8 @@
                   border-radius: 5px;
                 "
               >
-                <h3>Event Details</h3>
-                <h4>Date: 2nd - 6th December 2024</h4>
+                <h2>Event Details</h2>
+                <h3>Date: 2nd to 6th December 2024</h3>
                 <h4>Location</h4>
                 <address class="mb-3">
                   An Mheitheal<br />
@@ -435,303 +431,233 @@
         </section>
       </div>
       <div class="line"></div>
-      <!--
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-12 text-center mb-4">
-            <h3 class="purpletext">Art for Action Showcase</h3>
-            <h4 class="lead">Explore a selection of artworks</h4>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4 col-sm-6">
-            <div class="card h-100 border-0 shadow">
-              <img
-                src="images/disability-of-emptiness.jpg"
-                class="card-img-top"
-                alt="Description of artwork 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Artwork Title 1</h5>
-                <p class="card-text">
-                  The inspiration for creating this was the feeling of
-                  loneliness, and emptiness that can be viewed as a disability.
-                  This is a feeling that many people struggle with and I am one
-                  of those people. I chose a couch because it is empty and I
-                  feel that a couch should be warm, comforting and shared with
-                  others. In this photo it is shown as dark with red and black
-                  shadows to emphasize emptiness.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="card h-100 border-0 shadow">
-              <img
-                src="images/out-of-order.webp"
-                class="card-img-top"
-                alt="Description of artwork 2"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Artwork Title 2</h5>
-                <p class="card-text">
-                  A thought-provoking illustration showing a broken elevator on
-                  a university campus with a student in a wheelchair looking at
-                  a sign reading 'Out of Order'.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="card h-100 border-0 shadow">
-              <img
-                src="images/out-of-order.webp"
-                class="card-img-top"
-                alt="Description of artwork 3"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Artwork Title 3</h5>
-                <p class="card-text">
-                  A thought-provoking illustration showing a broken elevator on
-                  a university campus with a student in a wheelchair looking at
-                  a sign reading 'Out of Order'.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    -->
 
-      <h2 class="purpletext">Event Information</h2>
-      <p>
-        The exhibition,
-        <em>Art for Action: Building an Inclusive Future</em>, will take place
-        from <strong>Monday, December 2nd to Friday, December 6th</strong>, in
-        <strong>An Mheitheal</strong>, Trinity disAbility Hub, Printing House
-        Square. Admission is free, and all are welcome to attend.
-      </p>
-      <div class="accordion mt-4 mb-4" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button
-              class="accordion-button fw-bold"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseOne"
-              aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne"
+      <!-- Section 6 -->
+      <section>
+        <h2 class="purpletext">Event Information</h2>
+        <p>
+          The exhibition,
+          <em>Art for Action: Building an Inclusive Future</em>, will take place
+          from <strong>Monday, December 2nd to Friday, December 6th</strong>, in
+          <strong>An Mheitheal</strong>, Trinity disAbility Hub, Printing House
+          Square. Admission is free, and all are welcome to attend.
+        </p>
+        <div class="accordion mt-4 mb-4" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                More information about the Art for Action Event
+              </button>
+            </h3>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
             >
-              More information about the Art for Action Event
-            </button>
-          </h3>
-          <div
-            id="panelsStayOpen-collapseOne"
-            class="accordion-collapse collapse show"
-          >
-            <div class="accordion-body">
-              <p class="fw-semibold">
-                Click on the <i class="bi bi-chevron-down"></i> (down chevron)
-                to get more information.
-              </p>
+              <div class="accordion-body">
+                <p class="fw-semibold">
+                  Click on the <i class="bi bi-chevron-down"></i> (down chevron)
+                  to get more information.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <p class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                Project Administrator
+              </button>
+            </p>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <p><strong>Odhrán Mc Laughlin</strong></p>
+                <p>
+                  Odhrán joined the Trinity DisAbility Service in October 2024
+                  as Project Administrator, having provided support throughout
+                  the summer as the Executive Officer.
+                </p>
+                <p>
+                  Read more about
+                  <a
+                    href="https://www.tcd.ie/disability/contact/staff-profiles/odhran-mc-laughlin/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-decoration-none"
+                    >Odhrán Mc Laughlin</a
+                  >
+                  (Opens in a new window) at Trinity disAbility Service.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <p class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                Sensory Information
+              </button>
+            </p>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <p>
+                  <strong>Sensory Information:</strong> The
+                  <a
+                    href="https://www.tcd.ie/disability/"
+                    target="_blank"
+                    rel="nonopener"
+                    >Trinity disAbility Service</a
+                  >
+                  (opens in a new tab) and TCD Sense developed the
+                  <a
+                    href="https://tcdsensemap.ie/"
+                    target="_blank"
+                    rel="nonopener"
+                    >TCD Sense Map</a
+                  >
+                  (opens in a new tab). The map is a core element of a major
+                  initiative by the disAbility Service (DS),
+                  <a
+                    href="https://www.tcd.ie/disability/services/tcdsense.php"
+                    target="_blank"
+                    rel="nonopener"
+                    >TCD Sense - The Trinity Sensory Processing Project</a
+                  >
+                  (opens in a new tab), to make Trinity more inclusive by
+                  developing “different sensory environments, supports and
+                  resources to meet the needs of all students and staff within
+                  Trinity”. It is an interactive and empowering tool providing
+                  information about the sensory environments of different areas
+                  of the college campus, as well as tips on physical access,
+                  availability of power points, seating, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <p class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour"
+              >
+                Charging Points
+              </button>
+            </p>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <p>
+                  There are many sockets available in the An Mheitheal space,
+                  they can be found both along the walls and at the centre of
+                  the floor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <p class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFive"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFive"
+              >
+                Accessibility
+              </button>
+            </p>
+            <div
+              id="panelsStayOpen-collapseFive"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <p>
+                  The Trinity disAbility Hub in Printing House Square invites
+                  Deaf and disabled students, staff, and visitors to an
+                  inclusive, accessible and welcoming environment. For more
+                  information about accessibility in An Mheitheal, you can check
+                  out the
+                  <a
+                    href="https://tcdsensemap.ie/space/printing-house-square-an-mheitheal"
+                    target="_blank"
+                    rel="nonopener"
+                    >TCD Sense Map - An Mheitheal Space</a
+                  >
+                  (opens in a new tab). An Mheitheal is a large meeting room,
+                  with tables, chairs, projectors and a large interactive
+                  monitor. This space provides a quiet meeting or presentation
+                  space, with good natural light and is also used for group
+                  activities through the disAbility Service and College Health
+                  Service. The Trinity disAbility Service invites neurodiverse
+                  individuals to join us for plain language tour of the Art For
+                  Action: Building an Inclusive Future event.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <p class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#contactInfo"
+                aria-expanded="false"
+                aria-controls="contactInfo"
+              >
+                Contact Info
+              </button>
+            </p>
+            <div id="contactInfo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    Phone:
+                    <a href="tel:+353181963111">+353 1 896 3111</a>
+                  </li>
+                  <li class="list-group-item">
+                    Email:<a href="mailto:askds@tcd.ie"> askds@tcd.ie</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <p class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseTwo"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseTwo"
-            >
-              Project Administrator
-            </button>
-          </p>
-          <div
-            id="panelsStayOpen-collapseTwo"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              <p><strong>Odhrán Mc Laughlin</strong></p>
-              <p>
-                Odhrán joined the Trinity DisAbility Service in October 2024 as
-                Project Administrator, having provided support throughout the
-                summer as the Executive Officer.
-              </p>
-              <p>
-                Read more about
-                <a
-                  href="https://www.tcd.ie/disability/contact/staff-profiles/odhran-mc-laughlin/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-decoration-none"
-                  >Odhrán Mc Laughlin</a
-                >
-                (Opens in a new window) at Trinity disAbility Service.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <p class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseThree"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseThree"
-            >
-              Sensory Information
-            </button>
-          </p>
-          <div
-            id="panelsStayOpen-collapseThree"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              <p>
-                <strong>Sensory Information:</strong> The
-                <a
-                  href="https://www.tcd.ie/disability/"
-                  target="_blank"
-                  rel="nonopener"
-                  >Trinity disAbility Service</a
-                >
-                (opens in a new tab) and TCD Sense developed the
-                <a
-                  href="https://tcdsensemap.ie/"
-                  target="_blank"
-                  rel="nonopener"
-                  >TCD Sense Map</a
-                >
-                (opens in a new tab). The map is a core element of a major
-                initiative by the disAbility Service (DS),
-                <a
-                  href="https://www.tcd.ie/disability/services/tcdsense.php"
-                  target="_blank"
-                  rel="nonopener"
-                  >TCD Sense - The Trinity Sensory Processing Project</a
-                >
-                (opens in a new tab), to make Trinity more inclusive by
-                developing “different sensory environments, supports and
-                resources to meet the needs of all students and staff within
-                Trinity”. It is an interactive and empowering tool providing
-                information about the sensory environments of different areas of
-                the college campus, as well as tips on physical access,
-                availability of power points, seating, and more. A sensory area
-                in Printing House Square refers to a designated space
-                categorised by the level of sensory input it provides. These
-                areas are classified into high, medium, and low sensory areas
-                based on factors such as crowd density, noise levels, and the
-                presence of events or room bookings. High sensory areas are
-                often crowded and noisy with events, medium sensory areas are
-                less crowded with lower noise levels and some events, and low
-                sensory areas are the quietest and least crowded, with no
-                events, seating, and natural light, making them suitable for
-                taking a break.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <p class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseFour"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseFour"
-            >
-              Charging Points
-            </button>
-          </p>
-          <div
-            id="panelsStayOpen-collapseFour"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              <p>
-                There are many sockets available in the An Mheitheal space, they
-                can be found both along the walls and at the centre of the
-                floor.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <p class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseFive"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseFive"
-            >
-              Accessibility
-            </button>
-          </p>
-          <div
-            id="panelsStayOpen-collapseFive"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              <p>
-                The Trinity disAbility Hub in Printing House Square invites Deaf
-                and disabled students, staff, and visitors to an inclusive,
-                accessible and welcoming environment. For more information about
-                accessibility in An Mheitheal, you can check out the
-                <a
-                  href="https://tcdsensemap.ie/space/printing-house-square-an-mheitheal"
-                  target="_blank"
-                  rel="nonopener"
-                  >TCD Sense Map - An Mheitheal Space</a
-                >
-                (opens in a new tab). An Mheitheal is a large meeting room, with
-                tables, chairs, projectors and a large interactive monitor. This
-                space provides a quiet meeting or presentation space, with good
-                natural light and is also used for group activities through the
-                disAbility Service and College Health Service. The Trinity
-                disAbility Service invites neurodiverse individuals to join us
-                for plain language tour of the Art For Action: Building an
-                Inclusive Future event.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <p class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#contactInfo"
-              aria-expanded="false"
-              aria-controls="contactInfo"
-            >
-              Contact Info
-            </button>
-          </p>
-          <div id="contactInfo" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  Phone:
-                  <a href="tel:+353181963111">+353 1 896 3111</a>
-                </li>
-                <li class="list-group-item">
-                  Email:<a href="mailto:askds@tcd.ie"> askds@tcd.ie</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
+
+      <!-- Section 7 -->
+
       <div class="line"></div>
       <section id="background" class="mt-4" aria-labelledby="background">
         <h2>Background</h2>
@@ -779,13 +705,16 @@
           >
           (Opens in a new window).
         </p>
+      </section>
 
-        <div class="line"></div>
-
+      <div class="line"></div>
+      <!-- Section 8 -->
+      <section>
         <div class="container mt-5 mb-5" id="artexhibitors">
           <div class="row justify-content-center text-center">
             <h2 class="w-100 mb-4 purpletext">Art Exhibitors</h2>
-            <h3>Art Categories</h3>
+            <h3 class="mt-2 mb-2">Art Categories</h3>
+
             <div class="col-6 col-md-2 d-flex justify-content-center">
               <div class="icon-container position-relative">
                 <img
@@ -889,6 +818,7 @@
           <h3 id="toc-heading" class="text-center">
             List of Art For Action Artwork Submissions
           </h3>
+
           <div class="d-flex flex-column align-items-center text-center">
             <p>
               <a
@@ -987,7 +917,7 @@
         <div class="row mt-4">
           <!-- Full-width text section -->
           <div class="col-12 text-center" id="submission1">
-            <h3 class="fw-bold">Christian Keller</h3>
+            <h2 class="fw-bold">Christian Keller</h2>
             <p>
               Art:
               <img
@@ -1182,7 +1112,7 @@
         <div class="row mt-4">
           <!-- Full-width text section -->
           <div class="col-12 text-center" id="submission2">
-            <h3 class="fw-bold">Joanne Touhey</h3>
+            <h2 class="fw-bold">Joanne Touhey</h2>
             <p>
               Art:
               <img
@@ -1266,7 +1196,7 @@
         <div class="row mt-4">
           <!-- Full-width text section -->
           <div class="col-12 text-center" id="submission3">
-            <h3 class="fw-bold">Sadbh Caulfield</h3>
+            <h2 class="fw-bold">Sadbh Caulfield</h2>
 
             <p>
               Art:
@@ -1404,7 +1334,7 @@
         <div class="row mt-4">
           <!-- Full-width text section -->
           <div class="col-12 text-center" id="submission4">
-            <h3 class="fw-bold">Holly Wolohan</h3>
+            <h2 class="fw-bold">Holly Wolohan</h2>
             <p>
               Art:
               <img
@@ -1483,7 +1413,7 @@
         <div class="row mt-4">
           <!-- Full-width text section -->
           <div class="col-12 text-center" id="submission5">
-            <h3 class="fw-bold">Jessica K. Doyle</h3>
+            <h2 class="fw-bold">Jessica K. Doyle</h2>
             <p>
               Art:
               <img
@@ -1636,7 +1566,7 @@
         <div class="row mt-4">
           <!-- Full-width text section -->
           <div class="col-12 text-center" id="submission6">
-            <h3 class="fw-bold">Audrey Steinier</h3>
+            <h2 class="fw-bold">Audrey Steinier</h2>
             <p>
               Art:
               <img
@@ -1716,9 +1646,9 @@
       <!-- Ability coop Now You, See Me video -->
       <div class="container mt-5 text-center" id="submission7">
         <section aria-labelledby="video-section-title">
-          <h3 id="video-section-title">
+          <h2 id="video-section-title">
             Ability Co_op 'Now You See Me' Poster Campaign Video
-          </h3>
+          </h2>
           <div class="container my-4">
             <p>
               <span tabindex="0">
@@ -1755,10 +1685,10 @@
               </video>
             </div>
           </div>
-          <p class="mt-3 text-left">
+          <h3 class="mt-3 text-left">
             This video contains a collage of poster art images by the
             <em>Trinity Ability co_op</em>.
-          </p>
+          </h3>
         </section>
       </div>
 
